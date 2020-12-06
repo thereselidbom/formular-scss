@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/043e51ac62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Mitt Registreringsformulär</title>
+</head>
+
+<body>
+
+    <div class="my-5">
+        <div class="container">
+            <div>
+                <form class="mt-4 needs-validation" novalidate>
+                    <h5 class="heading mt-5 pb-2">PERSONLIGA UPPGIFTER</h5>
+
+                    <div class="form-row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstname"><strong>Förnamn</strong></label>
+                            <input type="text" class="form-control" id="firstname" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastname"><strong>Efternamn</strong></label>
+                            <input type="text" class="form-control" id="lastname" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email"><strong>E-postadress</strong></label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="password"><strong>Lösenord</strong></label>
+                            <input type="password" class="form-control" id="password" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="confirmpassword"><strong>Bekräfta Lösenord</strong></label>
+                            <input type="password" class="form-control" id="confirmpassword" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="heading mt-5 pb-2">FAKTURERINGSADRESS</h5>
+
+                    <div class="form-row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="postaladdress"><strong>Postadress</strong></label>
+                            <input type="text" class="form-control" id="postaladdress" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="postalcode"><strong>Postnummer</strong></label>
+                            <input type="text" class="form-control" id="postalcode" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="postalcity"><strong>Ort</strong></label>
+                            <input type="text" class="form-control" id="postalcity" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="heading mt-5 pb-2">LEVERANSADRESS</h5>
+
+                    <div class="form-row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="deliveryaddress">Leveransadress</label>
+                            <input type="text" class="form-control" id="deliveryaddress">
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="deliverycode">Postnummer</label>
+                            <input type="text" class="form-control" id="deliverycode">
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="deliverycity">Ort</label>
+                            <input type="text" class="form-control" id="deliverycity" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heading mt-5 pb-2"></div>
+
+                    <div class="form-group mt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="termsandconditionCheck" required>
+                            <label class="form-check-label" for="termsandconditionCheck">
+                                Jag har läst och accepterar <a href="#">GDPR och användarvillkoren</a>.
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="form-check  mt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="personalinformationCheck" required>
+                            <label class="form-check-label" for="personalinformationCheck">
+                                Jag ger min tillåtelse att EC Utbildning hanterar mina personuppgifter.
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="form-check  mt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="adCheck" required>
+                            <label class="form-check-label" for="adCheck">
+                                Jag vill ta del av nyhetsbrev och reklamerbjudanden.
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-4 col-12 py-3" type="submit">Slutför registrering</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
